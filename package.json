@@ -1,0 +1,12 @@
+{
+  "name": "vue-typeout-text",
+  "version": "0.1.0",
+  "description": "Type out the text :)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "balandowski@icloud.com",
+  "license": "ISC"
+}
