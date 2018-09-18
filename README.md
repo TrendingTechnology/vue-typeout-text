@@ -10,6 +10,7 @@
 ### Animate.css support
 
 ![AnimDemo](animdemo.gif?raw=true "AnimDemo")
+![AnimDemo2](anim2.gif?raw=true "AnimDemo2")
 
 If you want to text by typed out with animation you can add [animate.css](https://github.com/daneden/animate.css) from CDN into head in index.html then set animation attribute to any of animations from animate.css
 
