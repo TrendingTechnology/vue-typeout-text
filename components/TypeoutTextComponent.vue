@@ -1,5 +1,10 @@
 <template>
-    <div>{{ actualText }}</div>
+<div>
+      <span v-for="(letter, idx) in actualText" :key="idx" style="display: inline-block; width: auto; margin: 0; padding: 0;" :class="anim">
+        <span v-if="actualText.charCodeAt(idx) == 32">&nbsp;</span>
+        <span v-else>{{ letter }}</span>
+      </span>
+</div>
 </template>
 
 <script>
@@ -13,6 +18,11 @@ export default {
       type: Number,
       required: false,
       default: 2
+    },
+    animation: {
+      type: String,
+      required: false,
+      default: ""
     }
   },
   mounted() {
@@ -33,6 +43,13 @@ export default {
       text: "",
       index: 0
     };
+  },
+  computed: {
+    anim: function() {
+      if(this.animation == "") return " ";
+
+      return "animated " + this.animation
+    }
   }
 };
 </script>
